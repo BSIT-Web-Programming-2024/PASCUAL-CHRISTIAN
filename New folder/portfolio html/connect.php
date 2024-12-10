@@ -5,7 +5,7 @@
 
 
 	// Database connection
-	$connect = new mysqli('localhost','root','','pascual');
+	$connect = new mysqli('localhost','root','','contact');
 	if($connect->connect_error){
 		echo "$connect->connect_error";
 		die("Connection Failed : ". $connect->connect_error);
@@ -18,3 +18,4 @@
 		$stmt->close();
 		$connect->close();
 	}
+?>
